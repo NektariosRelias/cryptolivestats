@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CryptoLiveStats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        ul { margin-left: 20px; }
+        .date { color: #7f8c8d; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for CryptoLiveStats</h1>
+        <p class="date">Last updated: June 18, 2026</p>
+
+        <p>At CryptoLiveStats, accessible from https://cryptolivestats.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by CryptoLiveStats and how we use it.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>We collect information to provide better services to all our users. This includes:</p>
+        <ul>
+            <li><strong>Usage Data:</strong> We collect information on how our website is accessed and used, including your IP address, browser type, and pages visited.</li>
+            <li><strong>Cookies:</strong> We use cookies to store information about visitors' preferences and the pages on the website that the visitor accessed or visited.</li>
+        </ul>
+
+        <h2>2. Analytics</h2>
+        <p>We use <strong>Google Analytics</strong> to understand how our website is being used in order to improve the user experience. Google Analytics may collect information such as how often users visit this site and what pages they visit.</p>
+
+        <h2>3. Advertising</h2>
+        <p>We display advertisements on our website. These third-party ad services may use cookies to serve ads based on a user's prior visits to our website or other websites. You may opt-out of personalized advertising by visiting the Ads Settings.</p>
+
+        <h2>4. GDPR and Data Protection Rights</h2>
+        <p>If you are a resident of the European Economic Area (EEA), you have certain data protection rights. We aim to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data. If you wish to be informed what Personal Information we hold about you or if you want it to be removed from our systems, please follow the necessary procedures.</p>
+
+        <h2>5. Children's Information</h2>
+        <p>Our service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+    </div>
+
+
+<!-- Simple Cookie Consent Banner -->
+<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #2c3e50; color: #fff; padding: 15px; text-align: center; z-index: 9999; font-family: Arial, sans-serif;">
+    We use cookies to improve your experience. By clicking "Accept", you agree to our use of cookies.
+    <button onclick="acceptCookies()" style="margin-left: 20px; padding: 5px 20px; background: #27ae60; border: none; border-radius: 4px; cursor: pointer; color: white; font-weight: bold;">Accept</button>
+</div>
+
+<script>
+    function acceptCookies() {
+        localStorage.setItem('cookieConsent', 'accepted');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+    // Αν ο χρήστης έχει ήδη πατήσει accept, δεν το ξαναδείχνουμε
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+</script>
+</body>
+</html>
